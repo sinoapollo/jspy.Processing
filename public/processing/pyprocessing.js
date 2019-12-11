@@ -148,6 +148,8 @@ def sketch(p5):\n\
 	quad = p5.quad\n\
 	rect = p5.rect\n\
 	triangle = p5.triangle\n\
+	circle = p5.circle\n\
+	square = p5.square\n\
 \n\
 #Curves\n\
 	bezier = p5.bezier\n\
@@ -515,6 +517,8 @@ myp5 = window.p5.new(sketch)\n\
 		 	replace(/\bframeCount\b(?!\()/g, 'p5.frameCount').
 		 	replace(/\bdisplayHeight\b(?!\()/g, 'p5.displayHeight').
 		 	replace(/\bdisplayWidth\b(?!\()/g, 'p5.displayWidth').
+		 	replace(/\bwindowHeight\b(?!\()/g, 'p5.windowHeight').
+		 	replace(/\bwindowWidth\b(?!\()/g, 'p5.windowWidth').
 		 	replace(/\bfocused\b(?!\()/g, 'p5.focused').
 		 	replace(/\bheight\b(?!\()/g, 'p5.height').
 		 	replace(/\bwidth\b(?!\()/g, 'p5.width')
