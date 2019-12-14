@@ -3,8 +3,14 @@
 		<title>Web Python for Processing(based on p5js)</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+		<meta http-equiv="Access-Control-Allow-Methods" content="*" />
 		<script src="ace/ace.js"></script>
 		<script src="ace/mode-python.js" type="text/javascript" charset="utf-8"></script>
+		<script language="javascript" type="text/javascript" src="p5/p5.js"></script>
+		<script language="javascript" type="text/javascript" src="p5/p5.sound.js"></script>
+		<script type="text/javascript" src="brython/brython.js"></script>
+		<script type="text/javascript" src="brython/brython_stdlib.js"></script>
 		<script src="processing/pyprocessing.js"></script>
 		<style>
 	body {
@@ -146,7 +152,11 @@ function resizeace() {
 			<span id="title">Web Python for Processing</span><br/>
 			<span id="subtitle">(based on p5js, brython and ace)</span>
 		</div>
-		<div id="editor">def setup():
+		<div id="editor">def preload():
+	#load image,audio,video here
+	pass
+
+def setup():
 	pass
 
 def draw():
